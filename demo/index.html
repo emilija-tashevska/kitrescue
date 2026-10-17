@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KitRescue Demo</title>
+<meta name="description" content="KitRescue: correct a robot arm with a plain-English instruction, typed or spoken.">
+<style>
+:root{color-scheme:dark;--bg:#0e1012;--ink:#f4f2ee;--muted:#a6a7aa;--orange:#ff7138;--line:#353638}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1100px;margin:0 auto;padding:48px max(20px,env(safe-area-inset-right,0px)) 48px max(20px,env(safe-area-inset-left,0px));display:grid;gap:28px}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.eyebrow{margin:0;color:var(--orange);font-size:13px;font-weight:600;letter-spacing:3px;text-transform:uppercase}
+.brand{margin:0;font-size:20px;font-weight:650;letter-spacing:-.6px}.brand em{font-style:normal;color:var(--orange)}
+h1{margin:0;font-size:clamp(30px,5vw,52px);line-height:1.08;letter-spacing:-1.5px;font-weight:500;text-wrap:balance}
+h1 span{color:var(--orange)}
+.frame{position:relative;border:1px solid var(--line);background:#000}
+.frame:before{content:"";position:absolute;top:-1px;left:-1px;width:78px;height:3px;background:var(--orange)}
+video{display:block;width:100%;height:auto;aspect-ratio:1280/724}
+p.desc{margin:0;font-size:18px;line-height:1.55;color:var(--muted);max-width:68ch}
+.links{display:flex;gap:24px;flex-wrap:wrap;font-size:15px}
+.links a{color:var(--ink);text-decoration:none;border-bottom:1px solid #61676d;padding-bottom:3px}
+.links a:hover,.links a:focus-visible{border-color:var(--orange);outline:none}
+</style>
+</head>
+<body>
+<main>
+ <div class="top"><p class="eyebrow">Physical AI Hack · Demo</p><p class="brand">Kit<em>Rescue</em></p></div>
+ <h1>Tell the robot what to fix.<br><span>It plans the move and does it.</span></h1>
+ <div class="frame"><video controls playsinline preload="metadata" poster="poster.jpg" src="kitrescue-demo.mp4" aria-label="KitRescue demo: an operator types an instruction and the robot arm carries it out"></video></div>
+ <p class="desc">The operator types or speaks an instruction in plain English. KitRescue turns it into a plan, confirms the cube positions with the camera, and the calibrated arm carries out the task.</p>
+ <div class="links"><a href="../">View the slides</a><a href="https://github.com/5hirgur/kitrescue" target="_blank" rel="noopener">Project code on GitHub</a></div>
+</main>
+</body>
+</html>
