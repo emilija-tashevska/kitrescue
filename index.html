@@ -67,11 +67,11 @@ html{background:#050607}.add-video,.replace,#clear-videos,#video-picker{display:
  </div>
  <div class="footer"><span>Voice commands only trigger moves the robot is already calibrated for.</span><span class="folio">05 / 07</span></div>
 </section>
-<section class="slide demo voice" aria-label="Slide 6: Demo of voice correction">
+<section class="slide demo voice" aria-label="Slide 6: Demo of correcting the robot with an instruction">
  <div class="topline"><p class="eyebrow">Demo 02</p><p class="brand">Kit<em>Rescue</em></p></div>
- <div class="demo-copy"><h2>Next: fixing<br>mistakes<br><span class="accent">by voice.</span></h2><p class="command">“Put the orange<br>cube in the tray.”</p><p class="status">Voice control is<br>in progress.</p></div>
- <div class="video-slot" data-video="voice"><video controls playsinline preload="metadata" aria-label="Voice-triggered robot demonstration"></video><div class="placeholder"><div class="play-mark" aria-hidden="true">▷</div><p class="placeholder-title">The spoken correction</p><p class="placeholder-sub">VIDEO 02</p><button class="add-video" data-load="voice">Add video</button></div><button class="replace" data-load="voice">Replace video</button></div>
- <div class="footer"><span>Voice commands run on the same controller as Demo 01.</span><span class="folio">06 / 07</span></div>
+ <div class="demo-copy"><h2>Fixing it<br>with one<br><span class="accent">instruction.</span></h2><p class="command">“Put the orange<br>cube in the tray.”</p><p class="status">Typed or spoken.<br>The robot plans and acts.</p></div>
+ <div class="video-slot" data-video="voice"><video controls playsinline preload="metadata" aria-label="Instruction-triggered robot demonstration"></video><div class="placeholder"><div class="play-mark" aria-hidden="true">▷</div><p class="placeholder-title">The spoken correction</p><p class="placeholder-sub">VIDEO 02</p><button class="add-video" data-load="voice">Add video</button></div><button class="replace" data-load="voice">Replace video</button></div>
+ <div class="footer"><span>Instructions run on the same calibrated controller as Demo 01.</span><span class="folio">06 / 07</span></div>
 </section>
 <section class="slide future" aria-label="Slide 7: Where we are going">
  <div class="topline"><p class="eyebrow">Where we are going</p><p class="brand">Kit<em>Rescue</em></p></div>
@@ -128,7 +128,7 @@ addEventListener('keydown',e=>{if(e.target.closest('input,textarea,video'))retur
 addEventListener('hashchange',()=>show((Number(location.hash.slice(1))||1)-1));show((Number(location.hash.slice(1))||1)-1);
 function attach(key,src){const slot=document.querySelector(`[data-video="${key}"]`),video=slot.querySelector('video');video.onloadedmetadata=()=>slot.classList.add('has-video');video.onerror=()=>slot.classList.remove('has-video');video.src=src;video.load()}
 attach('physical','videos/pick-and-place.mp4');
-attach('voice','videos/voice-demo.mp4');
+attach('voice','demo/kitrescue-demo.mp4');
 </script>
 </body>
 </html>
