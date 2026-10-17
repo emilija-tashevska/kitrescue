@@ -28,56 +28,56 @@ html{background:#050607}.add-video,.replace,#clear-videos,#video-picker{display:
  <img class="backdrop" src="assets/robot-studio.png" alt="Stylised studio edit of the team's black NexArm robot, with warm edge lighting">
  <div class="shade"></div>
  <div class="topline"><p class="eyebrow">Physical AI Hack</p></div>
- <div class="title"><h1>Kit<span class="accent">Rescue</span></h1><p class="subtitle">A human interface<br>for robots</p></div>
+ <div class="title"><h1>Kit<span class="accent">Rescue</span></h1><p class="subtitle">Correct a robot<br>with your voice</p></div>
  <div class="footer"><span>London, 17 October 2026</span><span class="folio">01 / 07</span></div>
 </section>
-<section class="slide instruction capability" aria-label="Slide 2: What we taught and calibrated the robot to do">
+<section class="slide instruction capability" aria-label="Slide 2: What we built">
  <img class="backdrop" src="assets/cubes-studio.png" alt="Stylised photo of the orange, grey and black demonstration cubes on a charcoal background">
  <div class="shade"></div>
  <div class="topline"><p class="eyebrow">What we built</p><p class="brand">Kit<em>Rescue</em></p></div>
- <h2 class="capability-title">We taught and calibrated<br>the robot to <span class="accent">handle objects.</span></h2>
- <p class="project-explanation">We matched the camera’s view to the robot’s coordinates and set up its gripping and placement movements.</p>
- <p class="project-actions">The arm now picks up cubes, stacks them, and moves them into or out of a tray.</p>
- <div class="footer"><span>Our prototype handles known cubes in a calibrated tabletop workspace.</span><span class="folio">02 / 07</span></div>
+ <h2 class="capability-title">We calibrated a robot arm<br>to <span class="accent">pick, place and stack.</span></h2>
+ <p class="project-explanation">We lined up the camera with the arm’s coordinates and taught it how to grip and place.</p>
+ <p class="project-actions">It now picks up cubes, stacks them in order, and moves them in and out of a tray.</p>
+ <div class="footer"><span>Tabletop prototype: known cubes, one camera, one arm.</span><span class="folio">02 / 07</span></div>
 </section>
-<section class="slide assembly" aria-label="Slide 3: How our tasks relate to assembly-line work">
- <div class="topline"><p class="eyebrow">How this relates to manufacturing</p><p class="brand">Kit<em>Rescue</em></p></div>
- <h2>These actions could support<br><span class="accent">assembly-line work.</span></h2>
- <p class="assembly-intro">Our cubes stand in for parts, and the tray stands in for a component kit.</p>
- <table class="application-table"><thead><tr><th>What our robot does</th><th>How this could apply on a line</th></tr></thead><tbody>
- <tr><td>It picks up and places a cube.</td><td>It could move a component to its next station.</td></tr>
- <tr><td>It stacks cubes in a chosen order.</td><td>It could arrange parts for the next operation.</td></tr>
- <tr><td>It moves cubes into or out of a tray.</td><td>It could load a kit or remove a misplaced part.</td></tr>
+<section class="slide assembly" aria-label="Slide 3: Why it matters for manufacturing">
+ <div class="topline"><p class="eyebrow">Why it matters</p><p class="brand">Kit<em>Rescue</em></p></div>
+ <h2>The same moves show up<br><span class="accent">on an assembly line.</span></h2>
+ <p class="assembly-intro">The cubes stand in for parts. The tray stands in for a component kit.</p>
+ <table class="application-table"><thead><tr><th>On our table</th><th>On an assembly line</th></tr></thead><tbody>
+ <tr><td>Pick up and place a cube</td><td>Move a part to the next station</td></tr>
+ <tr><td>Stack cubes in a set order</td><td>Line up parts for the next step</td></tr>
+ <tr><td>Move cubes in and out of a tray</td><td>Load a kit or take out the wrong part</td></tr>
  </tbody></table>
- <div class="footer"><span>We are using a tabletop prototype to explore these manufacturing tasks.</span><span class="folio">03 / 07</span></div>
+ <div class="footer"><span>Start with specific, repeatable tasks. Expand from there.</span><span class="folio">03 / 07</span></div>
 </section>
-<section class="slide demo" aria-label="Slide 4: Our robot carries out the task">
+<section class="slide demo" aria-label="Slide 4: Demo of the robot stacking cubes">
  <div class="topline"><p class="eyebrow">Demo 01</p><p class="brand">Kit<em>Rescue</em></p></div>
- <div class="demo-copy"><h2>Our robot<br>carries out<br>the task.</h2><p class="description">The camera locates the cube, and the arm completes the planned movement.</p></div>
+ <div class="demo-copy"><h2>It already<br>does the job.</h2><p class="description">The camera finds the cube. The arm picks it up and stacks it.</p></div>
  <div class="video-slot" data-video="physical"><video controls playsinline preload="metadata" aria-label="Physical robot demonstration"></video><div class="placeholder"><div class="play-mark" aria-hidden="true">▷</div><p class="placeholder-title">The calibrated routine</p><p class="placeholder-sub">VIDEO 01</p><button class="add-video" data-load="physical">Add video</button></div><button class="replace" data-load="physical">Replace video</button></div>
- <div class="footer"><span>This video shows the physical capability we have built.</span><span class="folio">04 / 07</span></div>
+ <div class="footer"><span>This is what the robot can do today.</span><span class="folio">04 / 07</span></div>
 </section>
-<section class="slide system exception" aria-label="Slide 5: Operators need to guide the robot when the task changes">
- <div class="topline"><p class="eyebrow">Where the human interface matters</p><p class="brand">Kit<em>Rescue</em></p></div>
- <h2>When the task changes,<br><span class="accent">the operator can explain the correction.</span></h2>
- <p class="intro">We are adding voice so a person can request an action the robot already supports.</p>
+<section class="slide system exception" aria-label="Slide 5: When something goes wrong">
+ <div class="topline"><p class="eyebrow">When something goes wrong</p><p class="brand">Kit<em>Rescue</em></p></div>
+ <h2>Robots get it wrong sometimes.<br><span class="accent">The operator should just say how to fix it.</span></h2>
+ <p class="intro">No stopping the line, no reprogramming. One spoken instruction, and the robot corrects itself.</p>
  <div class="correction-example">
-  <div><p class="scenario-label">An example on the line</p><h3>A tray is missing a component.</h3><p>The operator notices that the orange part was left on the table.</p></div>
-  <div><p class="scenario-label">The operator’s instruction</p><h3>“Put the orange cube in the tray.”</h3><p>The voice layer will turn this request into a supported transfer task.</p></div>
+  <div><p class="scenario-label">What goes wrong</p><h3>A kit is missing a part.</h3><p>The orange part was left on the table instead of going into the tray.</p></div>
+  <div><p class="scenario-label">What the operator says</p><h3>“Put the orange cube in the tray.”</h3><p>The robot turns that sentence into a move it already knows how to do.</p></div>
  </div>
- <div class="footer"><span>We are developing voice control for corrections like this.</span><span class="folio">05 / 07</span></div>
+ <div class="footer"><span>Voice commands only trigger moves the robot is already calibrated for.</span><span class="folio">05 / 07</span></div>
 </section>
-<section class="slide demo voice" aria-label="Slide 6: We are adding spoken instructions">
+<section class="slide demo voice" aria-label="Slide 6: Demo of voice correction">
  <div class="topline"><p class="eyebrow">Demo 02</p><p class="brand">Kit<em>Rescue</em></p></div>
- <div class="demo-copy"><h2>We are adding<br><span class="accent">spoken<br>instructions.</span></h2><p class="command">“Put the orange<br>cube in the tray.”</p><p class="status">Voice integration is<br>in progress.</p></div>
+ <div class="demo-copy"><h2>Next: fixing<br>mistakes<br><span class="accent">by voice.</span></h2><p class="command">“Put the orange<br>cube in the tray.”</p><p class="status">Voice control is<br>in progress.</p></div>
  <div class="video-slot" data-video="voice"><video controls playsinline preload="metadata" aria-label="Voice-triggered robot demonstration"></video><div class="placeholder"><div class="play-mark" aria-hidden="true">▷</div><p class="placeholder-title">The spoken correction</p><p class="placeholder-sub">VIDEO 02</p><button class="add-video" data-load="voice">Add video</button></div><button class="replace" data-load="voice">Replace video</button></div>
- <div class="footer"><span>The spoken instruction will use the same calibrated robot controller.</span><span class="folio">06 / 07</span></div>
+ <div class="footer"><span>Voice commands run on the same controller as Demo 01.</span><span class="folio">06 / 07</span></div>
 </section>
-<section class="slide future" aria-label="Slide 7: Our goal for manufacturing recovery">
- <div class="topline"><p class="eyebrow">The ambition</p><p class="brand">Kit<em>Rescue</em></p></div>
- <h2 class="closing">We want operators to guide robots<br><span>when production needs a correction.</span></h2>
- <p class="context">KitRescue starts with physical tasks we have implemented and adds a human interface for requesting them.</p>
- <div class="roadmap"><div><p class="label">What works today</p><h3>The robot performs the physical tasks.</h3><p>Our arm picks and stacks cubes, and transfers them into or out of a tray.</p></div><div><p class="label">What we are building next</p><h3>The operator will request them by voice.</h3><p>We are connecting speech and task interpretation to the existing controller.</p></div></div>
+<section class="slide future" aria-label="Slide 7: Where we are going">
+ <div class="topline"><p class="eyebrow">Where we are going</p><p class="brand">Kit<em>Rescue</em></p></div>
+ <h2 class="closing">Robots handle the routine.<br><span>Operators fix the exceptions by voice.</span></h2>
+ <p class="context">We started with tasks the robot can already do. Now we are adding voice on top.</p>
+ <div class="roadmap"><div><p class="label">Working today</p><h3>The robot does the physical tasks.</h3><p>It picks up and stacks cubes, and moves them in and out of a tray.</p></div><div><p class="label">Building next</p><h3>Operators correct it by voice.</h3><p>We are connecting speech recognition to the robot’s existing controller.</p></div></div>
  <div class="footer"><a href="https://github.com/5hirgur/kitrescue" target="_blank" rel="noopener">github.com/5hirgur/kitrescue</a><span class="folio">07 / 07</span></div>
 </section>
 </div></main>
