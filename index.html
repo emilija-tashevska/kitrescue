@@ -128,6 +128,7 @@ addEventListener('keydown',e=>{if(e.target.closest('input,textarea,video'))retur
 addEventListener('hashchange',()=>show((Number(location.hash.slice(1))||1)-1));show((Number(location.hash.slice(1))||1)-1);
 function attach(key,src){const slot=document.querySelector(`[data-video="${key}"]`),video=slot.querySelector('video');video.onloadedmetadata=()=>slot.classList.add('has-video');video.onerror=()=>slot.classList.remove('has-video');video.src=src;video.load()}
 attach('physical','videos/pick-and-place.mp4');
+attach('voice','videos/voice-demo.mp4');
 </script>
 </body>
 </html>
